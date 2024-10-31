@@ -2,11 +2,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    /*background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGNhcmR8ZW58MHx8fHwxNjkwMTMzNTQ2&ixlib=rb-4.0.3&q=80&w=1080');
+    background-image: url('abstract-background-cement-wall-shadow-light-concept.jpg');
     background-size: cover;
     background-position: center;
-    color: #333;*/
-    color: #555;
+    color: #333;
 }
 
 .container {
