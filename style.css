@@ -22,7 +22,7 @@ header {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 1.8em;
 }
 
 table {
@@ -148,25 +148,6 @@ input:focus, select:focus {
     color: #333;
     font-size: 1.5em;
     float: right; /* Position close button to the right */
-    cursor: pointer;
-}
-
-.cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #333;
-    color: white;
-    padding: 15px;
-    display: none; /* initially hidden */
-}
-
-.cookie-button {
-    background: #007BFF;
-    border: none;
-    color: white;
-    padding: 10px;
     cursor: pointer;
 }
 
