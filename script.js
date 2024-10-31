@@ -15,8 +15,8 @@ function submitForm(event) {
     const name = document.getElementById('name').value;
     const attendance = document.getElementById('attendance').value;
 
-    // Hier wird eine E-Mail an die feste Adresse gesendet (dieser Teil muss auf einem Server implementiert werden)
-    // Zum Beispiel: sendEmail(name, attendance);
+    // E-Mail senden
+    sendEmail(name, attendance);
 
     // Bestätigungsnachricht anzeigen
     const confirmationMessage = document.getElementById('confirmationMessage');
@@ -28,6 +28,25 @@ function submitForm(event) {
     
     // Formular zurücksetzen
     document.getElementById('rsvpForm').reset();
+}
+
+// Funktion zum Senden der E-Mail über EmailJS
+function sendEmail(name, attendance) {
+    const attendanceText = attendance === "yes" ? "nehmen teil" : "nehmen nicht teil";
+    const YOUR_SERVICE_ID = 'service_wto6c2a';
+    const YOUR_TEMPLATE_ID = 'template_k0xyphk';
+    const YOUR_USER_ID = 'LvLuuoIs5XfPmCL_V';
+    
+    emailjs.send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, {
+        name: name,
+        attendanceText: attendanceText
+        
+    }, YOUR_USER_ID)
+    .then(function(response) {
+        console.log('Erfolgreich gesendet', response.status, response.text);
+    }, function(error) {
+        console.log('Fehler beim Senden', error);
+    });
 }
 
 // Cookie Banner Funktionen
