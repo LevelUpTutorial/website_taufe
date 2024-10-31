@@ -1,0 +1,173 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGNhcmR8ZW58MHx8fHwxNjkwMTMzNTQ2&ixlib=rb-4.0.3&q=80&w=1080');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Halbtransparenter Hintergrund */
+    border-radius: 10px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #007BFF; /* Blau für die Überschrift */
+}
+
+.date {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.bold {
+    font-weight: bold; /* Fett */
+}
+
+.italic {
+    font-style: italic; /* Kursiv */
+}
+
+.about {
+    margin: 20px 0;
+}
+
+.child-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.popup {
+    display: none; /* initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for popup */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Center text inside popup */
+    width: 90%;
+    max-width: 400px; /* Max width for popup */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Adding shadow for depth */
+}
+
+.popup-content h2 {
+    margin: 0 0 15px 0;
+    color: #007BFF; /* Heading color */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: border-color 0.3s; /* Smooth transition */
+}
+
+input:focus, select:focus {
+    border-color: #007BFF; /* Change border color on focus */
+}
+
+.submit-button {
+    background-color: #28a745; /* Grün für den Button */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.submit-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.confirmation-message {
+    margin-top: 10px;
+    color: #28a745; /* Grün für die Bestätigungsnachricht */
+}
+
+.close-button {
+    color: #333;
+    font-size: 1.5em;
+    float: right; /* Position close button to the right */
+    cursor: pointer;
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    color: white;
+    padding: 15px;
+    display: none; /* initially hidden */
+}
+
+.cookie-button {
+    background: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    .child-image {
+        width: 120px;
+        height: 120px;
+    }
+    .button {
+        padding: 8px 15px;
+    }
+    .popup-content {
+        width: 95%; /* Full width for smaller screens */
+    }
+}
