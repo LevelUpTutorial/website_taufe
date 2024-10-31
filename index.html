@@ -12,17 +12,17 @@
         <header>
             <h1>Einladung zur Taufe</h1>
             <p>Wir freuen uns sehr, diesen besonderen Tag mit euch zu teilen!</p>
-            <p class="date"><span class="bold">01. April 2025</span></p>
+            <p class="date"><span class="bold">08. April 2025</span></p>
         </header>
 
         <section class="about">
             <img
-                src="https://via.placeholder.com/150"
+                src="Finn-2024-10-30.jpeg"
                 alt="Bild unseres Kindes"
                 class="child-image"
             />
             <p>Wir laden euch herzlich ein, bei der Taufe unseres kleinen Wunders dabei zu sein. Lasst uns gemeinsam feiern und diesen besonderen Tag in einer wunderschönen Umgebung genießen.</p>
-            <p>Die Taufe findet in der <span class="italic">[Name und Ort der Kirche]</span> statt.</p>
+            <p>Die Taufe findet in der <span class="italic">Mariä Himmelfahrt und St. Peter & Paul, Kirchgasse 19, 63868 Großwallstadt</span> statt.</p>
             <p>Die anschließende Feier findet statt in <span class="italic">[Ort der Feier]</span>.</p>
         </section>
 
@@ -41,13 +41,14 @@
             <span class="close-button" onclick="closePopup()">&times;</span>
             <h2>Teilnahme bestätigen</h2>
             <form id="rsvpForm" onsubmit="submitForm(event)">
-                <label for="name">Dein Name:</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" required>
-
-                <label for="attendance">Kannst du kommen?</label>
+                <label for="personen_count">Anzahl Personen:</label>
+                <input type="number" id="personen_count" min="1" required>
+                <label for="attendance">Könnt ihr kommen?</label>
                 <select id="attendance" required>
-                    <option value="yes">Ja, ich bin dabei</option>
-                    <option value="no">Leider nicht</option>
+                    <option value="yes">Ja, wir sind dabei</option>
+                    <option value="no">Nein, leider nicht</option>
                 </select>
 
                 <button type="submit" class="submit-button">Antwort senden</button>
