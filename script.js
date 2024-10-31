@@ -23,11 +23,11 @@ function submitForm(event) {
     confirmationMessage.textContent = `${name}, vielen Dank für deine Antwort!`;
     confirmationMessage.style.color = '#28a745'; // Setzt die Textfarbe für die Bestätigung
 
-    // Formular zurücksetzen
-    document.getElementById('rsvpForm').reset();
-
     // Popup nach 2 Sekunden schließen
     setTimeout(closePopup, 2000);
+    
+    // Formular zurücksetzen
+    document.getElementById('rsvpForm').reset();
 }
 
 // Cookie Banner Funktionen
