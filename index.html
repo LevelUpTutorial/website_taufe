@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einladung zur Taufe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Einladung zur Taufe</h1>
+            <p>Wir freuen uns sehr, diesen besonderen Tag mit euch zu teilen!</p>
+            <p class="date"><span class="bold">01. April 2025</span></p>
+        </header>
+
+        <section class="about">
+            <img
+                src="https://via.placeholder.com/150"
+                alt="Bild unseres Kindes"
+                class="child-image"
+            />
+            <p>Wir laden euch herzlich ein, bei der Taufe unseres kleinen Wunders dabei zu sein. Lasst uns gemeinsam feiern und diesen besonderen Tag in einer wunderschönen Umgebung genießen.</p>
+            <p>Die Taufe findet in der <span class="italic">[Name und Ort der Kirche]</span> statt.</p>
+            <p>Die anschließende Feier findet statt in <span class="italic">[Ort der Feier]</span>.</p>
+        </section>
+
+        <button onclick="openPopup()" class="button">Anmelden / Abmelden</button>
+    </div>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <p>Diese Website verwendet technisch notwendige Cookies, um das beste Erlebnis zu gewährleisten. Weitere Cookies werden nur mit Ihrer Zustimmung gesetzt. Hinweis: Die Namen der Anmeldungen werden bis zum Datum der Taufe gespeichert.</p>
+        <button onclick="acceptCookies()" class="cookie-button">Akzeptieren</button>
+        <button onclick="rejectCookies()" class="cookie-button">Nur notwendige Cookies</button>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup()">&times;</span>
+            <h2>Teilnahme bestätigen</h2>
+            <form id="rsvpForm" onsubmit="submitForm(event)">
+                <label for="name">Dein Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="attendance">Kannst du kommen?</label>
+                <select id="attendance" required>
+                    <option value="yes">Ja, ich bin dabei</option>
+                    <option value="no">Leider nicht</option>
+                </select>
+
+                <button type="submit" class="submit-button">Antwort senden</button>
+                <p id="confirmationMessage" class="confirmation-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
