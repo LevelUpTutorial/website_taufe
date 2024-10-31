@@ -14,9 +14,10 @@ function submitForm(event) {
 
     const name = document.getElementById('name').value;
     const attendance = document.getElementById('attendance').value;
+    const personen_count = document.getElementById('personen_count').value;
 
     // E-Mail senden
-    sendEmail(name, attendance);
+    sendEmail(name, attendance, personen_count);
 
     // Bestätigungsnachricht anzeigen
     const confirmationMessage = document.getElementById('confirmationMessage');
@@ -31,16 +32,16 @@ function submitForm(event) {
 }
 
 // Funktion zum Senden der E-Mail über EmailJS
-function sendEmail(name, attendance) {
+function sendEmail(name, attendance, personen_count) {
     const attendanceText = attendance === "yes" ? "nehmen teil" : "nehmen nicht teil";
     const YOUR_SERVICE_ID = 'service_wto6c2a';
     const YOUR_TEMPLATE_ID = 'template_k0xyphk';
     const YOUR_USER_ID = 'LvLuuoIs5XfPmCL_V';
     
     emailjs.send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, {
-        name: name,
-        attendanceText: attendanceText
-        
+        from_name: name,
+        message: attendanceText,
+        personen_count: personen_count
     }, YOUR_USER_ID)
     .then(function(response) {
         console.log('Erfolgreich gesendet', response.status, response.text);
