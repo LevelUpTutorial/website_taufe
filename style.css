@@ -47,7 +47,7 @@ h1 {
     border-radius: 10px;
     width: 100%;
     height: auto; /* Bildhöhe passt sich an die Breite an */
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .button {
