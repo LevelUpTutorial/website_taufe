@@ -23,7 +23,6 @@ header {
 
 h1 {
     font-size: 2.5em;
-    color: #007BFF; /* Blau für die Überschrift */
 }
 
 table {
@@ -36,6 +35,7 @@ td {
     text-align: center;
     border-left: 2px solid #333; /* Trennlinie links */
 }
+
 td:first-child {
     border-left: none; /* Entfernt linke Linie in der ersten Spalte */
 }
