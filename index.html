@@ -12,7 +12,7 @@
         <header>
             <h1>Einladung zur Taufe</h1>
             <p>Wir freuen uns sehr, diesen besonderen Tag mit euch zu teilen!</p>
-            <p class="date"><span class="bold">08. April 2025</span></p>
+            <p class="date"><span class="bold">14. Juni 2025</span></p>
         </header>
 
         <section class="about">
@@ -50,6 +50,13 @@
                     <option value="yes">Ja, wir sind dabei</option>
                     <option value="no">Nein, leider nicht</option>
                 </select>
+                <label for="stay_type">Wie möchtet ihr übernachten?</label>
+                <input type="text" id="stay_type" required>
+                <datalist id="browsers">
+                  <option value="Hotel">
+                  <option value="Wohnwagen">
+                  <option value="Freier Stellplatz mit Wohnmobil">
+                </datalist>
 
                 <button type="submit" class="submit-button">Antwort senden</button>
                 <p id="confirmationMessage" class="confirmation-message"></p>
