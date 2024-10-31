@@ -36,18 +36,22 @@ function sendEmail(name, attendance, personen_count) {
     const attendanceText = attendance === "yes" ? "nehmen teil" : "nehmen nicht teil";
     const YOUR_SERVICE_ID = 'service_wto6c2a';
     const YOUR_TEMPLATE_ID = 'template_k0xyphk';
-    const YOUR_USER_ID = 'LvLuuoIs5XfPmCL_V';
     
-    emailjs.send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, {
+    let templateParams = {
         from_name: name,
         message: attendanceText,
         personen_count: personen_count
-    }, YOUR_USER_ID)
-    .then(function(response) {
-        console.log('Erfolgreich gesendet', response.status, response.text);
-    }, function(error) {
-        console.log('Fehler beim Senden', error);
-    });
+    };
+    
+    emailjs.send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, templateParams).then(
+      (response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      },
+      (error) => {
+        console.log('FAILED...', error);
+      },
+    );
+
 }
 
 // Cookie Banner Funktionen
