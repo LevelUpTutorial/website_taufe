@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Parisienne';
+    src: url('fonts/Parisienne-Regular.ttf') format('truetype');
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -63,6 +68,11 @@ td:first-child {
     width: 100%;
     height: auto; /* Bildhöhe passt sich an die Breite an */
     object-fit: contain;
+}
+
+.signature {
+    font-family: 'Parisienne', cursive;
+    font-size: 1.6em;
 }
 
 .button {
