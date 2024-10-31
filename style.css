@@ -26,8 +26,23 @@ h1 {
     color: #007BFF; /* Blau für die Überschrift */
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse; /* Entfernt äußere Ränder */
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-left: 2px solid #333; /* Trennlinie links */
+}
+td:first-child {
+    border-left: none; /* Entfernt linke Linie in der ersten Spalte */
+}
+
 .date {
     font-size: 1.8em;
+    font-weight: bold; /* Fett */
     color: #555;
 }
 
