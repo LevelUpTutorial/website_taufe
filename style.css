@@ -57,8 +57,8 @@ td:first-child {
 
 .child-image {
     border-radius: 5px;
-    width: 100%;
-    height: auto; /* Bildhöhe passt sich an die Breite an */
+    width: auto;
+    height: 300px;
     object-fit: contain;
 }
 
