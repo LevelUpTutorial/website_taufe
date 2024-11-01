@@ -64,7 +64,7 @@ td:first-child {
     border-radius: 15px;
     width: 100%;
     height: auto; /* Bildhöhe passt sich an die Breite an */
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .signature {
