@@ -73,9 +73,6 @@ td:first-child {
 
 /* Schaltfläche für den Wechsel */
 .toggle-button {
-    /*position: fixed;
-    bottom: 20px;
-    left: 50%;*/
     position: center;
     transform: translateX(-50%);
     font-size: 1em;
@@ -88,12 +85,10 @@ td:first-child {
 }
 
 .button {
-    /*position: fixed;
-    bottom: 20px;
-    right: 50%;*/
     position: center;
     transition: background-color 0.3s; /* Smooth transition */
     font-size: 1em;
+    margin: 10px;
     padding: 10px;
     background-color: #007BFF;
     color: white;
