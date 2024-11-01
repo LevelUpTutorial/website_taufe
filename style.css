@@ -188,13 +188,13 @@ input:focus, select:focus {
         font-size: 2em;
     }
     .child-image {
-        width: 120px;
-        height: 120px;
+        width: 100%;
+        height: auto;
     }
     .button {
         padding: 8px 15px;
     }
     .popup-content {
-        width: 95%; /* Full width for smaller screens */
+        width: 100%; /* Full width for smaller screens */
     }
 }
