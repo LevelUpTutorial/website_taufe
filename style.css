@@ -47,12 +47,6 @@ td:first-child {
     border-left: none; /* Entfernt linke Linie in der ersten Spalte */
 }
 
-.date {
-    font-size: 1.8em;
-    font-weight: bold; /* Fett */
-    color: #555;
-}
-
 .bold {
     font-weight: bold; /* Fett */
 }
@@ -62,7 +56,7 @@ td:first-child {
 }
 
 .about {
-    margin: 20px 0;
+    margin: 5px 0;
 }
 
 .child-image {
@@ -91,7 +85,6 @@ td:first-child {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    /*z-index: 10;*/
 }
 
 .button {
@@ -99,15 +92,14 @@ td:first-child {
     bottom: 20px;
     right: 50%;*/
     position: center;
+    transition: background-color 0.3s; /* Smooth transition */
     font-size: 1em;
+    padding: 10px;
     background-color: #007BFF;
     color: white;
     border: none;
-    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    /*z-index: 10;*/
-    transition: background-color 0.3s; /* Smooth transition */
 }
 
 .button-button:hover {
@@ -123,7 +115,7 @@ td:first-child {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 95%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for popup */
     justify-content: center;
