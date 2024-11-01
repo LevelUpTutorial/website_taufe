@@ -61,10 +61,10 @@ td:first-child {
 }
 
 .child-image {
-    border-radius: 15px;
+    border-radius: 5px;
     width: 100%;
     height: auto; /* Bildhöhe passt sich an die Breite an */
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .signature {
