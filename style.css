@@ -19,7 +19,6 @@ body {
     padding: 0px;
     text-align: center;
     background: rgba(255, 255, 255, 0.8); /* Halbtransparenter Hintergrund */
-    /*border-radius: 10px;*/
 }
 
 /* Container für den Inhaltswechsel */
@@ -69,20 +68,8 @@ td:first-child {
 .signature {
     font-family: 'Parisienne', cursive;
     font-size: 2.0em;
+    color: #007BFF;
 }
-
-/* Schaltfläche für den Wechsel 
-.toggle-button {
-    position: center;
-    transform: translateX(-50%);
-    font-size: 1em;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}*/
 
 .button {
     position: center;
@@ -90,17 +77,11 @@ td:first-child {
     font-size: 1em;
     margin: 10px;
     padding: 10px;
-    /*background-color: #007BFF;
-    color: white;*/
-    background-color: #333;
-    color: #fff;
+    background-color: #007BFF;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.button-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
 }
 
 .button:hover {
