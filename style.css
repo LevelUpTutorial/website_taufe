@@ -135,20 +135,6 @@ input:focus, select:focus {
     border-color: #007BFF; /* Change border color on focus */
 }
 
-.submit-button {
-    background-color: #28a745; /* Grün für den Button */
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
-.submit-button:hover {
-    background-color: #218838; /* Darker green on hover */
-}
-
 .confirmation-message {
     margin-top: 10px;
     color: #28a745; /* Grün für die Bestätigungsnachricht */
