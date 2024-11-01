@@ -7,9 +7,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    /*background-image: url('images/hands-in-hands.jpeg');
-    background-size: cover;
-    background-position: center;*/
     color: #333;
 }
 
@@ -18,7 +15,7 @@ body {
     margin: 0 auto;
     padding: 0px;
     text-align: center;
-    background: rgba(255, 255, 255, 1.0);
+    background: rgba(255, 255, 255, 1.0); /*nicht transparent*/
 }
 
 /* Container für den Inhaltswechsel */
@@ -105,7 +102,7 @@ td:first-child {
     padding: 20px;
     border-radius: 10px;
     text-align: center; /* Center text inside popup */
-    width: 90%;
+    width: 100%; /* 90% */
     max-width: 400px; /* Max width for popup */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Adding shadow for depth */
 }
