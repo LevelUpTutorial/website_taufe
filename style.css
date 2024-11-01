@@ -71,7 +71,7 @@ td:first-child {
     font-size: 2.0em;
 }
 
-/* Schaltfläche für den Wechsel */
+/* Schaltfläche für den Wechsel 
 .toggle-button {
     position: center;
     transform: translateX(-50%);
@@ -82,7 +82,7 @@ td:first-child {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+}*/
 
 .button {
     position: center;
@@ -90,8 +90,10 @@ td:first-child {
     font-size: 1em;
     margin: 10px;
     padding: 10px;
-    background-color: #007BFF;
-    color: white;
+    /*background-color: #007BFF;
+    color: white;*/
+    background-color: #333;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
