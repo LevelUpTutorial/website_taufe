@@ -143,6 +143,7 @@ label {
 }
 
 input, select {
+    position: center;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
