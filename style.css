@@ -25,12 +25,6 @@ body {
 
 /* Container für den Inhaltswechsel */
 .content-container {
-    /*padding: 20px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;*/
     transition: opacity 0.5s ease;
 }
 
@@ -88,35 +82,35 @@ td:first-child {
 .toggle-button {
     position: fixed;
     bottom: 20px;
-    left: 50%;
+    /*left: 50%;*/
     transform: translateX(-50%);
     font-size: 1em;
-    padding: 10px 0px 0px 20px;
+    padding: 10px 0px 0px 10px;
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 10;
-}
-
-.button-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    /*z-index: 10;*/
 }
 
 .button {
     position: fixed;
     bottom: 20px;
-    right: 50%;
+    /*right: 50%;*/
     font-size: 1em;
     background-color: #007BFF;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 10;
+    /*z-index: 10;*/
     transition: background-color 0.3s; /* Smooth transition */
+}
+
+.button-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 .button:hover {
