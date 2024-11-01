@@ -188,8 +188,8 @@ input:focus, select:focus {
         font-size: 2em;
     }
     .child-image {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 180px;
     }
     .button {
         padding: 8px 15px;
