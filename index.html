@@ -39,22 +39,28 @@
                     alt="Bild unseres Kindes"
                     class="child-image"
                 />
-                <p>Wir laden euch herzlich ein, bei der Taufe unseres kleinen Wunders dabei zu sein!</p>
-                <p>
-                    <table>
-                        <tr>
-                            <td>Samstag 14. Juni</td>
-                            <td>14:00 Uhr</td>
-                            <td><a href="https://www.google.de/maps/place/Mari%C3%A4+Himmelfahrt+und+St.+Peter+%26+Paul/@49.8798802,9.1587262,568m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47bd4f17035f3f4f:0xba5c570eeb8ba3e4!8m2!3d49.8798768!4d9.1613011!16s%2Fg%2F12hmqkj8l?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D">Peter & Paul, Großwallstadt</a></td>
-                        </tr>
-                    </table>
-                </p>
-                <p>Die anschließende Feier findet am <span class="italic"> <a href="https://www.google.de/maps/place/49%C2%B052'13.1%22N+9%C2%B011'02.4%22E/@49.8703107,9.1827185,284m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d49.870309!4d9.184006?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D">Grillplatz Kleinwallstadt</a></span> statt.</p>
-                <p>Wir freuen uns auf euch!</p>
-                <p><span class="signature">Finn & Jenny & Kim</span></p>
+                <!-- Container für den dynamischen Inhalt -->
+                <div class="content-container" id="contentContainer">    
+                    <p>Wir laden euch herzlich ein, bei der Taufe unseres kleinen Wunders dabei zu sein!</p>
+                    <p>
+                        <table>
+                            <tr>
+                                <td>Samstag 14. Juni</td>
+                                <td>14:00 Uhr</td>
+                                <td><a href="https://www.google.de/maps/place/Mari%C3%A4+Himmelfahrt+und+St.+Peter+%26+Paul/@49.8798802,9.1587262,568m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47bd4f17035f3f4f:0xba5c570eeb8ba3e4!8m2!3d49.8798768!4d9.1613011!16s%2Fg%2F12hmqkj8l?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D">Peter & Paul, Großwallstadt</a></td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>Die anschließende Feier findet am <span class="italic"> <a href="https://www.google.de/maps/place/49%C2%B052'13.1%22N+9%C2%B011'02.4%22E/@49.8703107,9.1827185,284m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d49.870309!4d9.184006?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D">Grillplatz Kleinwallstadt</a></span> statt.</p>
+                    <p>Wir freuen uns auf euch!</p>
+                    <p><span class="signature">Finn & Jenny & Kim</span></p>
+                </div>
             </section>
     
             <button onclick="openPopup()" class="button">Anmelden / Abmelden</button>
+
+            <!-- Umschalt-Schaltfläche -->
+            <button class="toggle-button" id="toggleButton">Übernachtungen</button>
         </div>
     
         <div id="popup" class="popup">
@@ -77,5 +83,35 @@
                 </form>
             </div>
         </div>
+
+        <script>
+            const contentContainer = document.getElementById('contentContainer');
+            const toggleButton = document.getElementById('toggleButton');
+        
+            // Inhalte für Hauptansicht
+            const mainContent = contentContainer.innerHTML;
+        
+            const accommodationContent = `
+                <h1>Übernachtungen</h1>
+                <p>Hier findest du eine Auswahl an Übernachtungsmöglichkeiten in der Nähe...</p>
+            `;
+        
+            // Zustand zur Überprüfung, welcher Inhalt aktuell angezeigt wird
+            let isMainContent = true;
+        
+            // Funktion zum Wechseln des Inhalts
+            toggleButton.addEventListener('click', () => {
+                contentContainer.style.opacity = 0; // Blendet Inhalt aus
+        
+                setTimeout(() => {
+                    // Aktualisiert Inhalt je nach aktuellem Zustand
+                    contentContainer.innerHTML = isMainContent ? accommodationContent : mainContent;
+                    toggleButton.textContent = isMainContent ? "Einladung" : "Übernachtungen";
+        
+                    isMainContent = !isMainContent; // Zustand aktualisieren
+                    contentContainer.style.opacity = 1; // Blendet Inhalt wieder ein
+                }, 500); // Wartezeit für Übergangseffekt
+            });
+        </script>
     </body>
 </html>
