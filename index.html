@@ -50,7 +50,7 @@
             <button onclick="openPopup()" class="button">Anmelden / Abmelden</button>
             <br>
             <!-- Umschalt-Schaltfläche -->
-            <button class="button" id="toggleButton">Übernachtungen</button>
+            <button class="button" id="toggleButton">Mehr Infos</button>
         </div>
     
         <div id="popup" class="popup">
@@ -82,15 +82,19 @@
             const mainContent = contentContainer.innerHTML;
         
             const accommodationContent = `
-                <h3>Camping / Stellplatz</h3>
+                <h3>Afterparty</h3>
+<p>Die Feier findet auf dem Grillplatz im Kleinwallstädter Wald statt. Kinder und Jungebliebene können am Wald und auf dem Wiesenhügel spielen. Denkt an entsprechende Kleidung für euch und eure Kids (die schmutzig werden darf) - abends könnte es evtl. kühler werden. Wenn Ihr uns Lebensmittelunverträglichkeiten mitteilen wollt, sprecht uns gerne an!</p>
+<p>Abends spielt ein DJ ab ca. 20:00 bis zum Ende der Feier um 01:00 Uhr. Wir hoffen Ihr feiert mit!</p>
+<h3>Übernachten</h3>
+<h4>Camping / Stellplatz</h4>
                 <p><a href="https://www.kleinwallstadt.de/vereine-freizeit-und-tourismus/wohnmobilstellplatz/">Wohnmobilstellplatz Kleinwallstadt</a></p>
                 <p><a href="https://www.promobil.de/stellplatz/stellplatz-mainauen-badewelt-588f1dd3721d54a52815e249.html">Wohnmobilstellplatz Großwallstadt</a></p>
                 <p><a href="https://campingplatzmainruh.de/angebote-preise/">Campingplatz oder Gurkenfass, Wörth a.M.</a></p>
-                <h3>Pension / Ferienwohnung</h3>
+                <h4>Pension / Ferienwohnung</h4>
                 <p><a href="https://www.kleinwallstadt.de/vereine-freizeit-und-tourismus/gastronomie/unterkuenfte/">Unterkünfte in Kleinwallstadt</a></p>
                 <p><a href="https://gaestehaus-schnabel.de/zimmer/zimmer-nr-1-mit-gartenzugang-und-mainblick">Gästehaus Schnabel, Großwallstadt</a></p>
                 <p><a href="https://www.adler-grosswallstadt.de/Uebernachten/">Gasthaus Adler, Großwallstadt</a></p>
-                <h3>Hotel</h3>
+                <h4>Hotel</h4>
                 <p><a href="https://business-sporthotel.com/">Sporthotel, Großwallstadt</a></p>
             `;
         
@@ -104,7 +108,7 @@
                 setTimeout(() => {
                     // Aktualisiert Inhalt je nach aktuellem Zustand
                     contentContainer.innerHTML = isMainContent ? accommodationContent : mainContent;
-                    toggleButton.textContent = isMainContent ? "Einladung" : "Übernachtungen";
+                    toggleButton.textContent = isMainContent ? "Einladung" : "Mehr Infos";
         
                     isMainContent = !isMainContent; // Zustand aktualisieren
                     contentContainer.style.opacity = 1; // Blendet Inhalt wieder ein
