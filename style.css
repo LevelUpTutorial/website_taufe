@@ -55,6 +55,14 @@ td:first-child {
     margin: 5px 0;
 }
 
+.block {
+    text-align: justify; 
+    margin: 20px; 
+    line-height: 1.6; 
+    hyphens: auto; 
+    word-wrap: break-word; 
+}
+
 .child-image {
     border-radius: 5px;
     width: auto;
